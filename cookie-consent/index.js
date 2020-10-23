@@ -243,7 +243,7 @@
         background: "#00FF00",
         border: "5px solid #FF0000",
         fontSize: 32,
-        transition: "all 150ms"
+        transition: "transform 150ms"
     })
 
     topButton.css(":hover", {
@@ -288,7 +288,7 @@
         background: "white",
         border: "2px solid black",
         marginTop: 10,
-        transition: "all 150ms"
+        transition: "transform 150ms"
     })
 
     proceedButton.css(":hover", {
@@ -340,6 +340,14 @@
         width: "100% !important"
     })
 
+    topButton.mediaQuery(breakpoint, {
+        width: "100%"
+    })
+
+    topButton.mediaQuery("(max-width: 415px)", {
+        fontSize: "26px !important"
+    })
+
     middleRow.mediaQuery(breakpoint, {
         flexDirection: "column"
     })
@@ -348,12 +356,16 @@
         marginBottom: 10
     })
 
-    rightRow.mediaQuery(breakpoint, {
-        margin: "auto",
+    rightRow.mediaQuery(breakpoint + " and (min-width: 421px)", {
         flexDirection: "row !important"
     })
 
-    cookieImage.mediaQuery(breakpoint, {
+    rightRow.mediaQuery("(max-width: 420px)", {
+        flexDirection: "column !important"
+    })
+
+    neulandGif.mediaQuery(breakpoint, {
+        width: "100% !important"
     })
 
     proceedButton.mediaQuery(breakpoint, {
