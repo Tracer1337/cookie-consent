@@ -1,7 +1,7 @@
 // (function() {
 
 const LET_ME_IN_GIF_SRC = "https://media1.giphy.com/media/yx400dIdkwWdsCgWYp/giphy.gif?cid=ecf05e47v8yic6beau4ihsmrr8eukadyvdy9zo2stsd149t4&rid=giphy.gif"
-const COOKIE_IMAGE_SRC = "cookie.png"
+const COOKIE_IMAGE_SRC = "cookie-consent/cookie.png"
 const NEULAND_GIF_SRC = "https://media1.tenor.com/images/e19c37aba799d79779eed12c28ee2f4c/tenor.gif"
 const DISAPPOINTED_IMAGE_SRC = "https://de.meming.world/images/de/thumb/b/bc/Mike_Wazowski-Sulley_Face_Swap.jpg/300px-Mike_Wazowski-Sulley_Face_Swap.jpg"
 const DOWNLOAD_CHROME_URL = "https://www.google.com/intl/de_de/chrome/"
