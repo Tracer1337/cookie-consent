@@ -20,7 +20,7 @@
 
 ### API
 
-##### > Open
+##### Open
 
 Add ``data-open-cc`` to a button
 
@@ -31,7 +31,7 @@ Example:
 
 ``window.openCookieConsent()``
 
-##### > Close
+##### Close
 
 ``window.closeCookieConsent()``
 
