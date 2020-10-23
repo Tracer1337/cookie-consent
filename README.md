@@ -9,6 +9,7 @@
 * [Erläuterung](#erlauterung)
 
 <a name="how-to-use">
+
 ### How To Use
 
 1. Download folder: ``cookie-consent``
@@ -16,6 +17,7 @@
 2. Insert at the end of ``<body>``: ``<script src="cookie-consent/index.js"></script>``
 
 <a name="api">
+
 ### API
 
 ##### Open
@@ -34,6 +36,7 @@ Example:
 ``window.closeCookieConsent()``
 
 <a name="erlauterung">
+
 ### Erläuterung
 Mir ist es wichtig, dass, sofern ein Popup für die Cookies verwendet wird, es
 
