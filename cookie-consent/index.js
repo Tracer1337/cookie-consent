@@ -422,7 +422,12 @@
         open()
     }
 
-    // Expose function to window object
+    // Apply functions to flagged DOM elements
+    Array.from(document.querySelectorAll("[data-open-cc]")).forEach(node => {
+        node.addEventListener("click", open)
+    })
+
+    // Expose functions to window object
     window.openCookieConsent = open
     window.closeCookieConsent = close
 })()
