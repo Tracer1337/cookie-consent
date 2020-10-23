@@ -94,6 +94,10 @@
 
     // Create mediaquery for given DOM Element in stylesheet
     HTMLElement.prototype.mediaQuery = function(query, cssObject) {
+        if (!this.cssClass) {
+            this.createCSSClass()
+        }
+
         const rules = stylesheet.createRules("@media only screen and " + query)
 
         rules.assignCSSObject(this.cssClass, cssObject)
@@ -271,7 +275,7 @@
 
     funText.css({
         fontSize: 12,
-        whiteSpace: "pre"
+        whiteSpace: "pre-wrap"
     })
 
     cookieImage.css({
@@ -318,8 +322,55 @@
      * Create Responsive Styles
      */
 
-    topRow.mediaQuery("(max-width: 650px)", {
+    const breakpoint = "(max-width: 700px)"
+
+    innerContainer.mediaQuery(breakpoint, {
+        width: "80% !important",
+        maxHeight: "80vh",
+        overflowY: "scroll"
+    })
+
+    topRow.mediaQuery(breakpoint, {
+        flexDirection: "column",
+        alignItems: "center"
+    })
+
+    letmeinGif.mediaQuery(breakpoint, {
+        marginBottom: 10,
+        width: "100% !important"
+    })
+
+    middleRow.mediaQuery(breakpoint, {
         flexDirection: "column"
+    })
+    
+    cookieText.mediaQuery(breakpoint, {
+        marginBottom: 10
+    })
+
+    rightRow.mediaQuery(breakpoint, {
+        margin: "auto",
+        flexDirection: "row !important"
+    })
+
+    cookieImage.mediaQuery(breakpoint, {
+    })
+
+    proceedButton.mediaQuery(breakpoint, {
+        fontSize: "20px !important",
+        margin: "0 !important"
+    })
+
+    funText.mediaQuery(breakpoint, {
+        margin: "10px 0"
+    })
+    
+    helperText.mediaQuery(breakpoint, {
+        marginTop: "10px !important"
+    })
+
+    disappointedImage.mediaQuery(breakpoint, {
+        width: "100% !important"
     })
 
     /**
